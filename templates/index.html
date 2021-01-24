@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="{% static 'css\cal.css' %}" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6234539c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="head">
+    <i class="fas fa-calculator" id="calImage"></i>
+     <a href="" style="margin:auto auto; color:black; width:50%;">
+         <h1 id="headT" >Welcome to this Calculator!</h1></a>
+</div>
+<hr>
+<section id="middle">
+    <div id="section">
+            <div style="background-color:red; ">
+            <h1 id="headi">Why use my Calculator? <br>IDK Because lol</h1>
+            </div>
+           <div id="par">
+            <p style="max-width:80%; text-align:center; font-family:aerial;">&nbsp; Hello welcome to my calculator website. I built this to challenge my
+                coding skills. I used python/Django, HTML/CSS and JavaScript.
+                </p>
+           </div>
+    </div>
+
+    <script>
+        function getData(){
+        alert("dada");
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+    <div id="right-middle">
+        <h2 id="calT">Calculator</h2>
+        <hr>
+
+        <form id="calculator" action="/" method="POST"  >{% csrf_token %}
+                <textarea id="inputI" name=nameC style="position: relative; left:15%; width:70%;" type="text"
+                          cols="70"></textarea>
+                <button id="BackBB" class="buttonStyle" href="">
+                   <i style="font-size:18px;" class="fas fa-backspace"></i> Delete</button>
+            <div type="button" id="backS" style="position:relative; left:17%;">
+                <div id="groupB">
+                    <button class="buttonStyle" href=""type="button" id="one"
+                           style="height:40px; width:30%;">1</button>
+                    <button class="buttonStyle" type="button" id="two" style="height:40px; width:30%;" >2</button>
+                    <button class="buttonStyle" type="button" id="three" style="height:40px; width:30%;" >3</button>
+                </div>
+                <div id="group2">
+                    <button class="buttonStyle" type="button" id="four" style="height:40px; width:30%;">4</button>
+                    <button class="buttonStyle" type="button" id="five"style="height:40px; width:30%;">5</button>
+                    <button  class="buttonStyle" type="button" id="six" style="height:40px; width:30%;">6</button>
+                </div>
+                <div id="group3">
+                    <button class="buttonStyle" type="button" id="seven" style="height:40px; width:15%;">7</button>
+                    <button class="buttonStyle" type="button" id="eight" style="height:40px; width:15%;">8</button>
+                    <button class="buttonStyle" type="button" id="nine" style="height:40px; width:15%;">9</button>
+                </div>
+                 <div id="rightCol">
+                         <button class="buttonStyle" type="button" id="plus" style="height:40px; width:35%;">+ plus</button>
+                         <button class="buttonStyle" type="button" id="minus" style="height:40px; width:35%;">- minus</button>
+                          <button class="buttonStyle" type="button" id="divide"style="height:40px; width:35%;">/ divide</button>
+                          <button class="buttonStyle" type="button" id="multiply" style="height:40px; width:35%;">X multiply</button>
+                 </div>
+                <button class="buttonStyle" type="button" id="zero3" style=" width:15.25%; height:40px; position:relative; left:-35%; top:90px;">0</button>
+                <button class="buttonStyle" style="position:relative; top:-15px; width:50%;">Calculate</button>
+            </div>
+            <h1 id="answerR">Answer: {{answer}}</h1>
+        </form>
+
+
+
+    </div>
+</section>
+<hr>
+<script>
+     var input=document.getElementById("inputI")
+    document.getElementById("one").onclick=function(){
+          input.value=input.value+'1';
+          return false;
+    }
+    document.getElementById("two").onclick=function(){
+          input.value=input.value+'2';
+    }
+    document.getElementById("three").onclick=function(){
+          input.value=input.value+'3';
+    }
+    document.getElementById("four").onclick=function(){
+          input.value=input.value+'4';
+    }
+    document.getElementById("five").onclick=function(){
+          input.value=input.value+'5';
+    }
+    document.getElementById("six").onclick=function(){
+          input.value=input.value+'6';
+    }
+    document.getElementById("seven").onclick=function(){
+          input.value=input.value+'7';
+    }
+    document.getElementById("eight").onclick=function(){
+          input.value=input.value+'8';
+    }
+    document.getElementById("nine").onclick=function(){
+          input.value=input.value+'9';
+    }
+    document.getElementById("plus").onclick=function(){
+          input.value=input.value+'+';
+    }
+    document.getElementById("minus").onclick=function(){
+          input.value=input.value+'-';
+    }
+    document.getElementById("multiply").onclick=function(){
+          input.value=input.value+'*';
+    }
+    document.getElementById("divide").onclick=function(){
+          input.value=input.value+'/';
+    }
+    document.getElementById("zero3").onclick=function(){
+          input.value=input.value+'0';
+          }
+
+
+
+
+</script>
+</body>
+</html>

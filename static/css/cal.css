@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+#headT{
+    text-align: center;
+    margin:auto auto;
+}
+
+
+#head{
+  display:flex;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  min-height:85px;
+}
+
+a:hoover{
+    color:gray;
+}
+
+
+#calImage{
+    font-size:250%;
+    margin:auto 0;
+    position:relative;
+    left:10%;
+}
+
+#middle{
+    display:flex;
+
+}
+#right-middle{
+min-width:60%;
+position:relative;
+right:-40%;
+border-left:solid;
+min-height:500px;
+
+}
+
+#calT{
+    text-align:center;
+}
+
+#calculator{
+    width:70%;
+    min-height: 400px;
+    position: relative;
+    top:20px;
+    left: 13%;
+    border:solid 1px;
+    background-color:#F0F8FF;
+}
+
+
+#groupB{
+    height:20px;
+    width: 50%;
+}
+#group2{
+    height:20px;
+    width: 50%;
+    position:relative;
+    top:40px;
+}
+
+#group3{
+position:relative;
+    top:80px;
+}
+
+#rightCol{
+display:inline-grid;
+position:relative;
+top:-79px;
+left:50%;
+width:50%;
+}
+
+
+
+.buttonStyle{
+    background-color:#E0FFFF;
+    color:black;
+    border-radius:7px;
+}
+
+#answerR{
+    width:50%;
+    text-align:center;
+}
+
+#headi{
+    position:absolute;
+    width:50%;
+    left:9%;
+}
+
+#par{
+    position:absolute;
+    width:25%;
+    left:7%;
+    top:170px;
+    color: white;
+    background-color: #778899;
+}
+
+#section{
+    background-color: #778899;
+    height:100px;
+}
+#BackBB{position:absolute;
+ left:0%;
+ height:40px;
+ width:15%;
+  font-size:80%;
+  }
+
+
+@media only screen and (max-width: 768px) {
+  #BackBB{
+   font-size:5%;
+  }
+}
+
+
